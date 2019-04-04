@@ -22,7 +22,12 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15), "App should return 'fizz buzz' if input number is 'fizz' AND 'buzz'"
   end
 
+  def test_other
+    assert_equal 19, FizzBuzz.new.fizz_buzz(19), "App should return input number if it is not 'fizz' OR 'buzz'"
+  end
+
 end
+
 
 
 

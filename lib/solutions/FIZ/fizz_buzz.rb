@@ -12,11 +12,13 @@ class FizzBuzz
   def fizz_buzz(number)
     return 'fizz buzz' if fizz?(number) && buzz?(number)
     return 'fizz' if fizz?(number)
+    return 'buzz' if buzz?(number)
 
-    'buzz' if buzz?(number)
+    number
   end
 
 end
+
 
 
 
