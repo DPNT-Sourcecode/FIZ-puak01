@@ -18,7 +18,12 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(157), "App should return 'buzz' if input number contains five"
   end
 
+  def test_fizz_buzz
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15), "App should return 'fizz buzz' if input number is 'fizz' AND 'buzz'"
+  end
+
 end
+
 
 
 
