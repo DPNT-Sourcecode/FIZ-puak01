@@ -14,6 +14,7 @@ class FizzBuzz
   end
 
   def fizz_buzz(number)
+    return 'deluxe' if deluxe?(number)
     return 'fizz buzz' if fizz?(number) && buzz?(number)
     return 'fizz' if fizz?(number)
     return 'buzz' if buzz?(number)
@@ -22,4 +23,5 @@ class FizzBuzz
   end
 
 end
+
 
