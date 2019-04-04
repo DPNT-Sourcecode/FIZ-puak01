@@ -9,6 +9,10 @@ class FizzBuzz
     number.to_s.include?('5') || (number % 5).zero?
   end
 
+  def deluxe?(number)
+    number > 10 && number.to_s.chars.uniq.length == 1
+  end
+
   def fizz_buzz(number)
     return 'fizz buzz' if fizz?(number) && buzz?(number)
     return 'fizz' if fizz?(number)
@@ -18,3 +22,4 @@ class FizzBuzz
   end
 
 end
+
